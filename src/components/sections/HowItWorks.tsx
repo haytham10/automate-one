@@ -58,11 +58,11 @@ const HowItWorks = () => {
                           </div>
                         </div>
 
-                        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-cyan-700 transition-colors">
+                        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-cyan-700 transition-colors text-left">
                           {step.title}
                         </h3>
                         
-                        <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                        <p className="text-lg text-gray-600 mb-6 leading-relaxed text-left">
                           {step.description}
                         </p>
 
