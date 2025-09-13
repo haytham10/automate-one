@@ -59,8 +59,8 @@ const Hero = () => {
           {/* Subheading */}
           <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed max-w-3xl mx-auto animate-fade-in" style={{animationDelay: '0.2s'}}>
             Stop wasting hours on spreadsheets, scraping, or repetitive DMs.
-            <br className="hidden md:block" />
-            <span className="font-semibold text-gray-800">Focus on growth while I handle the boring stuff.</span>
+            <br />
+            <span className="font-semibold text-gray-800"> Focus on growth while I handle the boring stuff.</span>
           </p>
 
           {/* CTA Section */}
