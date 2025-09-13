@@ -118,7 +118,7 @@ export const testimonials = [
   {
     name: "Mike R.", 
     role: "Marketing Agency",
-    content: "Haytham automated our reporting process. What took 3 hours now takes 5 minutes.",
+    content: "AutoMate.One automated our reporting process. What took 3 hours now takes 5 minutes.",
     rating: 5
   },
   {

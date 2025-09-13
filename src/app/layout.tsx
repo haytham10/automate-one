@@ -10,20 +10,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Automate Your Boring Tasks with Python + AI | Haytham M.",
-  description: "I build lightweight automations so you can focus on growth — starting at $39, delivered in 48h. Excel dashboards, web scraping, AI integrations and more.",
-  keywords: ["automation", "python", "AI", "excel", "web scraping", "productivity"],
-  authors: [{ name: "Haytham M." }],
+  title: "AutoMate.One - Automate Your Business with Python + AI",
+  description: "AutoMate.One builds lightweight automations so you can focus on growth — starting at $39, delivered in 48h. Excel dashboards, web scraping, AI integrations and more.",
+  keywords: ["automation", "python", "AI", "excel", "web scraping", "productivity", "AutoMate.One"],
+  authors: [{ name: "AutoMate.One" }],
   openGraph: {
-    title: "Automate Your Boring Tasks with Python + AI",
-    description: "I build lightweight automations so you can focus on growth — starting at $39, delivered in 48h.",
+    title: "AutoMate.One - Automate Your Business with Python + AI",
+    description: "AutoMate.One builds lightweight automations so you can focus on growth — starting at $39, delivered in 48h.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Automate Your Boring Tasks with Python + AI",
-    description: "I build lightweight automations so you can focus on growth — starting at $39, delivered in 48h.",
+    title: "AutoMate.One - Automate Your Business with Python + AI",
+    description: "AutoMate.One builds lightweight automations so you can focus on growth — starting at $39, delivered in 48h.",
   },
   robots: {
     index: true,

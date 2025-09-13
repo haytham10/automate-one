@@ -2,6 +2,7 @@
   "name": "automate-one",
   "version": "0.1.0",
   "private": true,
+  "description": "AutoMate.One - AI automation solutions for businesses",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

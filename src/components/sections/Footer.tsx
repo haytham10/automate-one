@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="font-bold text-xl mb-3 text-gray-900">
-              Haytham M.
+              AutoMate.One
             </h3>
             <p className="text-sm text-gray-600 mb-4">
               Python automation specialist helping businesses save time.
@@ -57,7 +57,7 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>© {currentYear} Haytham M. All rights reserved.</p>
+          <p>© {currentYear} AutoMate.One. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <a href="#" className="hover:text-cyan-600 transition-colors">Privacy</a>
             <a href="#" className="hover:text-cyan-600 transition-colors">Terms</a>
