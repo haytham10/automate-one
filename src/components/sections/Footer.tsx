@@ -69,7 +69,12 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>© {currentYear} AutoMate.One. All rights reserved.</p>
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+            <p>© {currentYear} AutoMate.One. All rights reserved.</p>
+            <p className="flex items-center gap-1 text-xs text-gray-400">
+              Built with love <span className="text-red-400 animate-pulse">❤️</span>
+            </p>
+          </div>
           <div className="flex items-center gap-4">
             <a href="#" className="hover:text-cyan-600 transition-colors">Privacy</a>
             <a href="#" className="hover:text-cyan-600 transition-colors">Terms</a>
