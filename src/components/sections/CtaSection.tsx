@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../ui/Button";
 import { Container } from "../ui/Container";
-import { SparklesIcon, RocketLaunchIcon } from "@heroicons/react/24/outline";
+import { SparklesIcon, RocketLaunchIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const CtaSection = () => {
   return (
@@ -57,7 +57,8 @@ const CtaSection = () => {
               size="lg"
               className="group relative bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-white text-lg px-8 py-4 shadow-xl hover:shadow-2xl hover:scale-[1.05] transform transition-all duration-300 font-semibold"
             >
-              Start Automating for $39 →
+              Start Automating
+                <ArrowRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
               href="#services" 
