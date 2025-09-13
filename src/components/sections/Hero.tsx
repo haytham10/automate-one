@@ -3,6 +3,7 @@ import { Button } from "../ui/Button";
 import { Container } from "../ui/Container";
 import ReactCountryFlag from "react-country-flag";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -26,12 +27,28 @@ const Hero = () => {
 
       <Container className="relative">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Badge */}
+          {/* Logo */}
+          <div className="flex justify-center mb-6 animate-fade-in">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 rounded-2xl blur opacity-50 group-hover:opacity-75 transition duration-1000"></div>
+              <div className="relative p-3 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-100">
+                <Image 
+                  src="/logo.svg" 
+                  alt="AutoMate.One Logo" 
+                  width={48} 
+                  height={48} 
+                  className="w-12 h-12 object-contain" 
+                />
+              </div>
+            </div>
+          </div>
+          
+          {/*
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 text-red-700 text-sm font-semibold px-4 py-2 rounded-full mb-8 shadow-sm animate-fade-in">
             <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse-slow"></span>
             First 3 clients → FREE 24h rush delivery
             <span className="text-base">🚨</span>
-          </div>
+          </div> */}
 
           {/* Main heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 animate-slide-up text-gray-900">

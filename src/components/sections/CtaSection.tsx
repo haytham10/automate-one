@@ -1,7 +1,8 @@
 import React from "react";
 import { Button } from "../ui/Button";
 import { Container } from "../ui/Container";
-import { SparklesIcon, RocketLaunchIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import { SparklesIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 const CtaSection = () => {
   return (
@@ -26,7 +27,13 @@ const CtaSection = () => {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
               <div className="relative p-4 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl shadow-xl">
-                <RocketLaunchIcon className="w-10 h-10 text-white" />
+                <Image 
+                  src="/logo.svg" 
+                  alt="AutoMate.One Logo" 
+                  width={64} 
+                  height={64} 
+                  className="w-16 h-16 object-contain filter brightness-0 invert" 
+                />
               </div>
               <div className="absolute -top-2 -right-2 p-1.5 bg-gradient-to-r from-yellow-300 to-orange-300 rounded-full shadow-lg animate-bounce-gentle">
                 <SparklesIcon className="w-4 h-4 text-gray-800" />

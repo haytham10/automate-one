@@ -4,6 +4,7 @@ import {
   EnvelopeIcon, 
   MapPinIcon
 } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,9 +16,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="font-bold text-xl mb-3 text-gray-900">
-              AutoMate.One
-            </h3>
+            <div className="flex items-center gap-2 mb-3">
+              <div className="relative">
+                <Image 
+                  src="/logo.svg" 
+                  alt="AutoMate.One Logo" 
+                  width={32} 
+                  height={32} 
+                  className="w-8 h-8 object-contain" 
+                />
+              </div>
+              <h3 className="font-bold text-xl text-primary-600">
+                AutoMate
+              </h3>
+            </div>
             <p className="text-sm text-gray-600 mb-4">
               Python automation specialist helping businesses save time.
             </p>
