@@ -35,7 +35,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-2 text-sm text-gray-500">
               <MapPinIcon className="w-4 h-4" />
-              <span>Morocco • Available worldwide</span>
+              <span>Morocco • Available Worldwide</span>
             </div>
           </div>
 
@@ -43,10 +43,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-gray-900 mb-3">Services</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-cyan-600 transition-colors">Web Scraping</a></li>
-              <li><a href="#" className="hover:text-cyan-600 transition-colors">Data Processing</a></li>
-              <li><a href="#" className="hover:text-cyan-600 transition-colors">API Integration</a></li>
-              <li><a href="#" className="hover:text-cyan-600 transition-colors">Custom Scripts</a></li>
+              <li><a href="#services" className="hover:text-cyan-600 transition-colors">Web Scraping</a></li>
+              <li><a href="#services" className="hover:text-cyan-600 transition-colors">Data Processing</a></li>
+              <li><a href="#services" className="hover:text-cyan-600 transition-colors">API Integration</a></li>
+              <li><a href="#services" className="hover:text-cyan-600 transition-colors">Custom Scripts</a></li>
             </ul>
           </div>
 
@@ -54,14 +54,14 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-gray-900 mb-3">Get in Touch</h4>
             <div className="space-y-2 text-sm">
-              <a href="#" className="flex items-center gap-2 hover:text-cyan-600 transition-colors">
+              <a href="mailto:info@auto-mate.one" className="flex items-center gap-2 hover:text-cyan-600 transition-colors">
                 <EnvelopeIcon className="w-4 h-4" />
-                Start a Project
+                info@auto-mate.one
               </a>
               <div className="space-y-1 pt-2">
-                <a href="#" className="block hover:text-cyan-600 transition-colors">LinkedIn</a>
-                <a href="#" className="block hover:text-cyan-600 transition-colors">GitHub</a>
-                <a href="#" className="block hover:text-cyan-600 transition-colors">Fiverr</a>
+                <a href="https://www.linkedin.com/in/haytham-mokhtari-2a4867112/" target="_blank" rel="noopener noreferrer" className="block hover:text-cyan-600 transition-colors">LinkedIn</a>
+                <a href="https://github.com/haytham10" target="_blank" rel="noopener noreferrer" className="block hover:text-cyan-600 transition-colors">GitHub</a>
+                <a href="https://www.fiverr.com/haytham1001" target="_blank" rel="noopener noreferrer" className="block hover:text-cyan-600 transition-colors">Fiverr</a>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
-            <p>© {currentYear} AutoMate.One. All rights reserved.</p>
+            <p>© {currentYear} Auto-Mate.One. All rights reserved.</p>
             <p className="flex items-center gap-1 text-xs text-gray-400">
               Built with love <span className="text-red-400 animate-pulse">❤️</span>
             </p>

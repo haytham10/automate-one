@@ -60,7 +60,7 @@ const CtaSection = () => {
           {/* Enhanced CTA Buttons with better hierarchy */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-scale-in" style={{animationDelay: '0.4s'}}>
             <Button 
-              href="#" 
+              href="mailto:info@auto-mate.one?subject=Automation Project Request&body=Hi AutoMate.One!%0A%0AI'm interested in automating some business processes. Here's what I need help with:%0A%0A[Please describe your current manual process and what you'd like to automate]%0A%0AThank you!" 
               size="lg"
               className="group relative bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-white text-lg px-8 py-4 shadow-xl hover:shadow-2xl hover:scale-[1.05] transform transition-all duration-300 font-semibold"
             >
