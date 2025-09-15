@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://auto-mate.one'
+  const baseUrl = 'https://www.auto-mate.one'
   
   return [
     {

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://auto-mate.one/sitemap.xml
+Sitemap: https://www.auto-mate.one/sitemap.xml
 
 # Block crawling of admin areas
 Disallow: /admin/

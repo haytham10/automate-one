@@ -20,18 +20,18 @@ export const metadata: Metadata = {
     "AI workflow automation", "agency productivity", "marketing automation", 
     "client reporting automation", "AutoMate.One", "python automation services"
   ],
-  authors: [{ name: "AutoMate.One", url: "https://auto-mate.one" }],
+  authors: [{ name: "AutoMate.One", url: "https://www.auto-mate.one" }],
   creator: "AutoMate.One",
   publisher: "AutoMate.One",
   alternates: {
-    canonical: "https://auto-mate.one",
+    canonical: "https://www.auto-mate.one",
   },
   openGraph: {
     title: "AutoMate.One - Agency Automation Services | Save 15+ Hours/Week",
     description: "Custom automation services for agencies. Automated reporting, lead sourcing, and AI workflows. Starting at $199 with 5-7 day delivery.",
     type: "website",
     locale: "en_US",
-    url: "https://auto-mate.one",
+    url: "https://www.auto-mate.one",
     siteName: "AutoMate.One",
     images: [
       {
@@ -109,10 +109,10 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "Organization",
-                  "@id": "https://auto-mate.one/#organization",
+                  "@id": "https://www.auto-mate.one/#organization",
                   name: "AutoMate.One",
-                  url: "https://auto-mate.one",
-                  logo: "https://auto-mate.one/logo.svg",
+                  url: "https://www.auto-mate.one",
+                  logo: "https://www.auto-mate.one/logo.svg",
                   description: "Custom automation services for agencies and businesses",
                   foundingDate: "2024",
                   contactPoint: {
@@ -127,11 +127,11 @@ export default function RootLayout({
                 },
                 {
                   "@type": "LocalBusiness",
-                  "@id": "https://auto-mate.one/#business",
+                  "@id": "https://www.auto-mate.one/#business",
                   name: "AutoMate.One",
-                  image: "https://auto-mate.one/logo.svg",
+                  image: "https://www.auto-mate.one/logo.svg",
                   description: "Professional automation services for agencies. Automated reporting, lead sourcing, and workflow optimization.",
-                  url: "https://auto-mate.one",
+                  url: "https://www.auto-mate.one",
                   telephone: "+212-658-377929",
                   address: {
                     "@type": "PostalAddress",
@@ -151,11 +151,11 @@ export default function RootLayout({
                 },
                 {
                   "@type": "Service",
-                  "@id": "https://auto-mate.one/#service",
+                  "@id": "https://www.auto-mate.one/#service",
                   name: "Agency Automation Services",
                   description: "Custom automation solutions for agencies including automated reporting, lead sourcing, and workflow optimization",
                   provider: {
-                    "@id": "https://auto-mate.one/#organization"
+                    "@id": "https://www.auto-mate.one/#organization"
                   },
                   serviceType: "Business Process Automation",
                   areaServed: "Worldwide",
