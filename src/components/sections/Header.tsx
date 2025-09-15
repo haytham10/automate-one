@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "../ui/Button";
 import { Container } from "../ui/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   const [, setIsScrolled] = useState(false);
@@ -26,7 +27,7 @@ const Header = () => {
       <Container>
   <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer">
             <div className="relative">
               <Image 
                 src="/logo.svg" 
@@ -39,7 +40,7 @@ const Header = () => {
             <span className="font-bold text-xl gradient-text bg-clip-text text-transparent select-none">
               AutoMate.One
             </span>
-          </div>
+          </Link>
 
           {/* Navigation Links - Hidden on mobile, visible on desktop */}
           <nav className="hidden md:flex flex-1 justify-center items-center gap-10">
