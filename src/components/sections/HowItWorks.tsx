@@ -26,7 +26,7 @@ const HowItWorks = () => {
           </p>
           <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-blue-700 text-sm font-medium px-4 py-2 rounded-full animate-fade-in" style={{animationDelay: '0.4s'}}>
             <ClockIcon className="w-4 h-4" />
-            Most automations delivered within 48 hours
+            Most automations delivered within days, not weeks
           </div>
         </div>
         
@@ -110,7 +110,7 @@ const HowItWorks = () => {
               Ready to Automate Your Workflow?
             </h3>
             <p className="text-gray-600 mb-6 text-lg">
-              Join 100+ satisfied clients who save hours every week with custom automation solutions.
+              New studio, fast turnarounds, code included, 30‑day support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button variant="primary" size="lg" className="group">

@@ -83,7 +83,7 @@ export const howItWorks = [
       "Complete setup documentation included",
       "Video walkthrough of how it works"
     ],
-    timeframe: "24-48 hours",
+    timeframe: "Days, not weeks",
   },
   {
     step: 3,

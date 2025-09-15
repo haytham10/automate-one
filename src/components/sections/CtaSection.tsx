@@ -52,19 +52,20 @@ const CtaSection = () => {
 
           {/* Enhanced subheading with better contrast */}
           <p className="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed max-w-3xl mx-auto animate-fade-in" style={{animationDelay: '0.2s'}}>
-            Join <span className="font-bold text-cyan-600">100+ entrepreneurs</span> who&apos;ve already automated their boring tasks.
+            <span className="font-bold text-cyan-600">New studio, fast turnarounds, code included, 30‑day support.</span>
             <br />
-            <span className="font-semibold text-gray-800 text-xl">Start with just $39 - no setup fees, no monthly charges.</span>
+            <span className="font-semibold text-gray-800 text-xl">Get started today - no setup fees, no monthly charges.</span>
           </p>
 
           {/* Enhanced CTA Buttons with better hierarchy */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-scale-in" style={{animationDelay: '0.4s'}}>
             <Button 
-              href="mailto:info@auto-mate.one?subject=Automation Project Request&body=Hi AutoMate.One!%0A%0AI'm interested in automating some business processes. Here's what I need help with:%0A%0A[Please describe your current manual process and what you'd like to automate]%0A%0AThank you!" 
+              href="https://calendly.com/automate-one/15min" 
+			  external={true}
               size="lg"
               className="group relative bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-white text-lg px-8 py-4 shadow-xl hover:shadow-2xl hover:scale-[1.05] transform transition-all duration-300 font-semibold"
             >
-              Start Automating
+              Book 15-min Call
                 <ArrowRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
@@ -84,7 +85,7 @@ const CtaSection = () => {
           {/* Enhanced trust indicators with premium styling */}
           <div className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto animate-fade-in" style={{animationDelay: '0.6s'}}>
             {[
-              { color: 'green', text: '48h Delivery', icon: '⚡' },
+              { color: 'green', text: 'Fast Delivery', icon: '⚡' },
               { color: 'blue', text: 'Money Back Guarantee', icon: '🛡️' },
               { color: 'cyan', text: 'Source Code Included', icon: '💾' }
             ].map((item, index) => (

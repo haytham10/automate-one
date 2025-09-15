@@ -12,19 +12,19 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "AutoMate.One - Automate Your Business with Python + AI",
-  description: "AutoMate.One builds lightweight automations so you can focus on growth — starting at $39, delivered in 48h. Excel dashboards, web scraping, AI integrations and more.",
+  description: "AutoMate.One builds custom Python automations so you can focus on growth. Excel dashboards, web scraping, AI integrations and more.",
   keywords: ["automation", "python", "AI", "excel", "web scraping", "productivity", "AutoMate.One"],
   authors: [{ name: "AutoMate.One" }],
   openGraph: {
     title: "AutoMate.One - Automate Your Business with Python + AI",
-    description: "AutoMate.One builds lightweight automations so you can focus on growth — starting at $39, delivered in 48h.",
+    description: "AutoMate.One builds custom Python automations so you can focus on growth.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "AutoMate.One - Automate Your Business with Python + AI",
-    description: "AutoMate.One builds lightweight automations so you can focus on growth — starting at $39, delivered in 48h.",
+    description: "AutoMate.One builds custom Python automations so you can focus on growth.",
   },
   robots: {
     index: true,

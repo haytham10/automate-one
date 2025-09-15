@@ -78,7 +78,7 @@ const Hero = () => {
 
           {/* Trust badges with country flags */}
           <div className="mt-16 pt-12 border-t border-gray-200 animate-fade-in" style={{animationDelay: '0.6s'}}>
-            <p className="text-sm text-gray-500 mb-10">Trusted by 100+ solopreneurs worldwide</p>
+            <p className="text-sm text-gray-500 mb-10">New studio, fast turnarounds, code included, 30‑day support.</p>
             
             {/* Country flags with names - optimized */}
             <div className="grid grid-cols-3 md:grid-cols-6 gap-10 max-w-lg mx-auto mb-6">
