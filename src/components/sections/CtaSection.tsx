@@ -46,7 +46,7 @@ const CtaSection = () => {
             Save Hours Every Week
             <br />
             <span className="bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              Let&apos;s Automate Together
+              {"Let's Automate Together"}
             </span>
           </h2>
 

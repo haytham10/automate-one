@@ -5,6 +5,7 @@ import {
   MapPinIcon
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import ReactCountryFlag from "react-country-flag";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -35,7 +36,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-2 text-sm text-gray-500">
               <MapPinIcon className="w-4 h-4" />
-              <span>Morocco • Available Worldwide</span>
+              <span>Morocco</span>
             </div>
           </div>
 
@@ -67,10 +68,32 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Country flags section */}
+        <div className="border-t border-gray-200 pt-6 pb-6">
+          <div className="text-center">
+            <p className="text-sm text-gray-500 mb-4">Serving clients worldwide</p>
+            <div className="flex justify-center items-center gap-6 flex-wrap">
+              {[
+                { code: 'US', name: 'USA' },
+                { code: 'GB', name: 'UK' },
+                { code: 'CA', name: 'Canada' },
+                { code: 'MA', name: 'Morocco' },
+                { code: 'FR', name: 'France' },
+                { code: 'DE', name: 'Germany' },
+              ].map(({ code, name }) => (
+                <div key={code} className="flex items-center gap-2 text-sm text-gray-500 hover:text-gray-700 transition-colors">
+                  <ReactCountryFlag countryCode={code} svg style={{width: '1.2em', height: '1.2em'}} title={code} />
+                  <span>{name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* Bottom bar */}
         <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
-            <p>© {currentYear} Auto-Mate.One. All rights reserved.</p>
+            <p>© {currentYear} AutoMate.One. All rights reserved.</p>
             <p className="flex items-center gap-1 text-xs text-gray-400">
               Built with love <span className="text-red-400 animate-pulse">❤️</span>
             </p>

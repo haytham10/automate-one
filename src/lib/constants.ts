@@ -10,53 +10,80 @@ import {
 
 export const services = [
   {
-    id: "excel",
-    title: "Excel & Data Transformation",
-    description: "Transform messy spreadsheets into beautiful, auto-updating dashboards. Connect multiple data sources and create real-time reporting systems.",
-    icon: TableCellsIcon,
-    features: ["Live dashboards", "Data cleaning", "Automated reports", "Multi-source integration"],
-    timesSaved: "15+ hours/week"
-  },
-  {
-    id: "scraping",
-    title: "Web Scraping & Monitoring",
-    description: "Automatically collect competitor prices, product reviews, job listings, or any web data. Get alerts when changes happen.",
-    icon: GlobeAltIcon,
-    features: ["Price monitoring", "Data extraction", "Change alerts", "Daily reports"],
-    timesSaved: "20+ hours/week"
-  },
-  {
-    id: "ai",
-    title: "AI & Workflow Automation",
-    description: "Connect ChatGPT and AI tools to your existing apps. Auto-generate content, analyze data, and streamline complex workflows.",
-    icon: CpuChipIcon,
-    features: ["Content generation", "Data analysis", "Smart workflows", "API integrations"],
-    timesSaved: "10+ hours/week"
-  },
-  {
-    id: "processes",
-    title: "Process Automation",
-    description: "Automate repetitive business processes like data entry, file management, email responses, and system integrations.",
-    icon: ArrowPathIcon,
-    features: ["File automation", "Email workflows", "Data entry", "System sync"],
-    timesSaved: "25+ hours/week"
-  },
-  {
     id: "reporting",
     title: "Automated Reporting",
-    description: "Generate and distribute reports automatically. Connect to databases, APIs, and files to create scheduled business intelligence.",
+    description: "Daily/weekly client reports without copy/paste",
+    outcome: "Daily/weekly client reports without copy/paste",
     icon: DocumentChartBarIcon,
-    features: ["Scheduled reports", "Multi-format export", "Stakeholder distribution", "KPI tracking"],
-    timesSaved: "12+ hours/week"
+    features: ["GA4 + Meta + Google Ads → Sheet/PDF", "Scheduled 6am send", "Slack/Email alerts", "Error handling"],
+    timesSaved: "5-15 hours/week",
+    pricing: "Starter-friendly ($199)",
+    timeline: "5–7 days",
+    demoLink: true,
+    icons: ["/icons/google_analytics.png", "/icons/meta.png", "/icons/google_sheets.png", "/icons/slack.png"]
+  },
+  {
+    id: "lead-sourcing",
+    title: "Lead Sourcing & Monitoring",
+    description: "Fresh prospects and competitor intel, auto-updated",
+    outcome: "Fresh prospects and competitor intel, auto-updated",
+    icon: GlobeAltIcon,
+    features: ["Clutch/G2/Maps scrape", "Dedupe + change alerts", "Push to Sheets/HubSpot", "Respect site ToS, prefer APIs"],
+    timesSaved: "8-20 hours/week",
+    pricing: "Starter ($199) or Pro if enrichment",
+    timeline: "5–7 days",
+    demoLink: true,
+    compliance: "We respect site ToS and prefer official APIs",
+    icons: ["/icons/google_sheets.png", "/icons/hubspot.png", "/icons/slack.png"]
+  },
+  {
+    id: "ops-automation",
+    title: "Ops & File Automation",
+    description: "Move/rename/convert files and create tasks automatically",
+    outcome: "Move/rename/convert files and create tasks automatically",
+    icon: ArrowPathIcon,
+    features: ["Rename/convert assets", "Route to Drive", "Create ClickUp/Asana tasks", "Notify on success/failure"],
+    timesSaved: "3-12 hours/week",
+    pricing: "Starter-friendly ($199)",
+    timeline: "5–7 days",
+    icons: ["/icons/clickup.png", "/icons/google_sheets.png", "/icons/slack.png"]
+  },
+  {
+    id: "spreadsheet-dashboards",
+    title: "Spreadsheet Cleanup & Dashboards", 
+    description: "Turn messy CSVs into client‑ready dashboards",
+    outcome: "Turn messy CSVs into client‑ready dashboards",
+    icon: TableCellsIcon,
+    features: ["Merge sources", "Dedupe/validate", "Chart tab + export PDF", "Scheduled refresh"],
+    timesSaved: "4-15 hours/week",
+    pricing: "Starter ($199) for single source; Pro for multi-source",
+    timeline: "5–7 days",
+    icons: ["/icons/google_sheets.png", "/icons/google_analytics.png"]
+  },
+  {
+    id: "ai-assist",
+    title: "AI Assist for Client Ops",
+    description: "Use LLMs to summarize, tag, and draft—no spam",
+    outcome: "Use LLMs to summarize, tag, and draft—no spam",
+    icon: CpuChipIcon,
+    features: ["Summarize emails to ClickUp", "Generate briefs from links", "Tag/classify tickets", "QC checks"],
+    timesSaved: "2-10 hours/week",
+    pricing: "Starter ($199) for single-step; Pro for pipelines",
+    timeline: "5–7 days",
+    icons: ["/icons/clickup.png", "/icons/slack.png", "/icons/google_sheets.png"]
   },
   {
     id: "custom",
-    title: "Custom Solutions",
-    description: "Have a unique challenge? I build tailored automation solutions for your specific business needs and requirements.",
+    title: "Custom Automations",
+    description: "Bespoke workflows, multi‑source, or advanced integrations",
+    outcome: "Bespoke workflows, multi‑source, or advanced integrations",
     icon: RocketLaunchIcon,
-    features: ["Tailored solutions", "Business-specific", "Scalable architecture", "Full documentation"],
+    features: ["Multi-account rollups", "API integrations", "AI pipelines", "Scalable architecture"],
     timesSaved: "Variable",
-    isCustom: true
+    pricing: "From $1,200",
+    timeline: "2–4 weeks",
+    isCustom: true,
+    icons: ["/icons/shopify.png", "/icons/hubspot.png", "/icons/clickup.png"]
   },
 ];
 

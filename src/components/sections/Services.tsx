@@ -10,11 +10,14 @@ const Services = () => {
     <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-slate-50 via-white to-slate-50" id="services">
       <Container>
         <div className="text-center mb-16">
+          <p className="text-sm text-cyan-600 font-medium mb-4 animate-fade-in">
+            Built for small agencies: reporting, lead gen, ops, and AI assist
+          </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-slide-up text-gray-900">
-            What I Can Automate for You
+            Automations for Agencies
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in mb-4" style={{animationDelay: '0.2s'}}>
-            From messy spreadsheets to complex AI workflows, I turn your repetitive tasks into automated solutions.
+            From daily client reports to prospect monitoring, automate the tasks that keep your team busy.
           </p>
           <div className="inline-flex items-center gap-2 bg-cyan-50 border border-cyan-200 text-cyan-700 text-sm font-medium px-4 py-2 rounded-full animate-fade-in" style={{animationDelay: '0.4s'}}>
             <ClockIcon className="w-4 h-4" />

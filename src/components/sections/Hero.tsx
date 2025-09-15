@@ -1,13 +1,12 @@
 import React from "react";
 import { Button } from "../ui/Button";
 import { Container } from "../ui/Container";
-import ReactCountryFlag from "react-country-flag";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden min-h-screen flex items-center">
+    <section className="relative pt-20 pb-16 md:pt-24 md:pb-24 lg:pt-32 lg:pb-32 overflow-hidden min-h-screen flex items-center">
       {/* Animated background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-cyan-50"></div>
       
@@ -27,28 +26,6 @@ const Hero = () => {
 
       <Container className="relative">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Logo */}
-          <div className="flex justify-center mb-6 animate-fade-in">
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 rounded-2xl blur opacity-50 group-hover:opacity-75 transition duration-1000"></div>
-              <div className="relative p-3 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-100">
-                <Image 
-                  src="/logo.svg" 
-                  alt="AutoMate.One Logo" 
-                  width={48} 
-                  height={48} 
-                  className="w-12 h-12 object-contain" 
-                />
-              </div>
-            </div>
-          </div>
-          
-          {/*
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 text-red-700 text-sm font-semibold px-4 py-2 rounded-full mb-8 shadow-sm animate-fade-in">
-            <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse-slow"></span>
-            First 3 clients → FREE 24h rush delivery
-            <span className="text-base">🚨</span>
-          </div> */}
 
           {/* Main heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 animate-slide-up text-gray-900">
@@ -57,42 +34,84 @@ const Hero = () => {
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed max-w-3xl mx-auto animate-fade-in" style={{animationDelay: '0.2s'}}>
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-10 leading-relaxed max-w-3xl mx-auto animate-fade-in" style={{animationDelay: '0.2s'}}>
             Stop wasting hours on spreadsheets, scraping, or repetitive DMs.
             <br />
-            <span className="font-semibold text-gray-800"> Focus on growth while I handle the boring stuff.</span>
+            <span className="font-semibold text-gray-900"> Focus on growth while I handle the boring stuff.</span>
           </p>
+
+          {/* Intro Video Section */}
+          <div className="mb-12 animate-fade-in" style={{animationDelay: '0.3s'}}>
+            <div className="relative max-w-2xl mx-auto">
+              <div className="relative aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl overflow-hidden shadow-2xl border border-gray-300">
+                {/* Placeholder for Loom video - replace with actual embed */}
+                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-cyan-50 to-blue-50">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                      </svg>
+                    </div>
+                    <p className="text-gray-600 font-medium">Watch 60s Intro Video</p>
+                    <p className="text-sm text-gray-500">See how we automate your workflows</p>
+                  </div>
+                </div>
+                {/* 
+                Replace this placeholder with actual Loom embed:
+                <iframe 
+                  src="https://www.loom.com/embed/YOUR_LOOM_VIDEO_ID"
+                  frameBorder="0" 
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                ></iframe>
+                */}
+              </div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl blur opacity-20"></div>
+            </div>
+          </div>
 
           {/* CTA Section */}
           <div className="animate-scale-in" style={{animationDelay: '0.4s'}}>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-6">
-              <Button href="#" size="lg" className="group text-lg px-8 py-4 shadow-lg hover:shadow-xl transform transition-all duration-300">
+            <div className="flex flex-col md:flex-row gap-4 justify-center items-stretch md:items-center mb-6">
+              <Button href="https://calendly.com/automate-one/15min" external={true} size="lg" className="group text-lg px-8 py-4 shadow-lg hover:shadow-xl transform transition-all duration-300 w-full md:w-auto">
                 Get Started
                 <ArrowRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button href="#services" variant="secondary-white" size="lg" className="text-lg px-8 py-4">
+              <Button href="#services" variant="secondary-white" size="lg" className="text-lg px-8 py-4 w-full md:w-auto">
                 View Examples
               </Button>
             </div>
           </div>
 
-          {/* Trust badges with country flags */}
+          {/* Trust badges with integration icons */}
           <div className="mt-16 pt-12 border-t border-gray-200 animate-fade-in" style={{animationDelay: '0.6s'}}>
             <p className="text-sm text-gray-500 mb-10">New studio, fast turnarounds, code included, 30‑day support.</p>
             
-            {/* Country flags with names - optimized */}
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-10 max-w-lg mx-auto mb-6">
+            <p className="text-sm font-medium text-gray-700 mb-6">Works with</p>
+            
+            {/* Integration icons */}
+            <div className="grid grid-cols-4 md:grid-cols-8 gap-6 max-w-4xl mx-auto mb-6">
               {[
-                { code: 'US', name: 'USA' },
-                { code: 'GB', name: 'UK' },
-                { code: 'CA', name: 'Canada' },
-                { code: 'MA', name: 'Morocco' },
-                { code: 'FR', name: 'France' },
-                { code: 'DE', name: 'Germany' },
-              ].map(({ code, name }) => (
-                <div key={code} className="flex flex-col items-center space-y-1 hover:scale-110 transition-transform cursor-pointer">
-                  <ReactCountryFlag countryCode={code} svg style={{width: '1.5em', height: '1.5em'}} title={code} />
-                  <span className="text-xs text-gray-400">{name}</span>
+                { name: 'GA4', icon: '/icons/google_analytics.png' },
+                { name: 'Meta', icon: '/icons/meta.png' },
+                { name: 'Google Ads', icon: '/icons/google_ads.png' },
+                { name: 'Google Sheets', icon: '/icons/google_sheets.png' },
+                { name: 'Slack', icon: '/icons/slack.png' },
+                { name: 'HubSpot', icon: '/icons/hubspot.png' },
+                { name: 'ClickUp', icon: '/icons/clickup.png' },
+                { name: 'Shopify', icon: '/icons/shopify.png' },
+              ].map(({ name, icon }) => (
+                <div key={name} className="flex flex-col items-center space-y-2 hover:scale-110 transition-transform cursor-pointer">
+                  <div className="w-10 h-10 bg-white rounded-lg shadow-md flex items-center justify-center border border-gray-200 hover:shadow-lg transition-shadow p-2">
+                    <Image 
+                      src={icon} 
+                      alt={`${name} integration`} 
+                      width={24} 
+                      height={24} 
+                      className="w-6 h-6 object-contain"
+                    />
+                  </div>
+                  <span className="text-xs text-gray-500 text-center">{name}</span>
                 </div>
               ))}
             </div>

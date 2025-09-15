@@ -113,7 +113,7 @@ const HowItWorks = () => {
               New studio, fast turnarounds, code included, 30‑day support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="primary" size="lg" className="group">
+              <Button href="https://calendly.com/automate-one/15min" external={true} variant="primary" size="lg" className="group">
                 Start Your Automation
                 <ArrowRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
