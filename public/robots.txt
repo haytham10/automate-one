@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://auto-mate.one/sitemap.xml
+
+# Block crawling of admin areas
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow crawling of important pages
+Allow: /
+Allow: /pricing
+Allow: /services
+Allow: /about
+Allow: /contact
+
+# Crawl delay for better server performance
+Crawl-delay: 1
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /

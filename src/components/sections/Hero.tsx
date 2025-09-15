@@ -6,19 +6,23 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative pt-20 pb-16 md:pt-24 md:pb-24 lg:pt-32 lg:pb-32 overflow-hidden min-h-screen flex items-center">
+    <section 
+      className="relative pt-20 pb-16 md:pt-24 md:pb-24 lg:pt-32 lg:pb-32 overflow-hidden min-h-screen flex items-center"
+      role="banner"
+      aria-labelledby="hero-heading"
+    >
       {/* Animated background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-cyan-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-cyan-50" aria-hidden="true"></div>
       
       {/* Animated background decoration */}
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full max-w-6xl">
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full max-w-6xl" aria-hidden="true">
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-cyan-200 opacity-20 rounded-full blur-3xl animate-pulse-slow"></div>
         <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-200 opacity-20 rounded-full blur-3xl animate-pulse-slow" style={{animationDelay: '1s'}}></div>
         <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-purple-200 opacity-15 rounded-full blur-3xl animate-pulse-slow" style={{animationDelay: '2s'}}></div>
       </div>
 
       {/* Floating elements */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute top-20 left-10 w-4 h-4 bg-cyan-400 rounded-full opacity-20 animate-bounce" style={{animationDelay: '0.5s'}}></div>
         <div className="absolute top-40 right-20 w-3 h-3 bg-blue-400 rounded-full opacity-30 animate-bounce" style={{animationDelay: '1.5s'}}></div>
         <div className="absolute bottom-40 left-20 w-2 h-2 bg-purple-400 rounded-full opacity-25 animate-bounce" style={{animationDelay: '2.5s'}}></div>
@@ -28,7 +32,10 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
 
           {/* Main heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 animate-slide-up text-gray-900">
+          <h1 
+            id="hero-heading"
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 animate-slide-up text-gray-900"
+          >
             I Automate Your Boring Tasks with{" "}
             <span className="gradient-text">Python + AI</span>
           </h1>
@@ -77,9 +84,19 @@ const Hero = () => {
                 Get Started
                 <ArrowRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button href="#services" variant="secondary-white" size="lg" className="text-lg px-8 py-4 w-full md:w-auto">
-                View Examples
+              <Button href="#pricing" variant="secondary" size="lg" className="text-lg px-8 py-4 border-2 hover:shadow-lg transform transition-all duration-300 w-full md:w-auto">
+                View Pricing
               </Button>
+            </div>
+            
+            {/* Scroll indicator */}
+            <div className="mt-16 animate-fade-in" style={{animationDelay: '0.8s'}}>
+              <a href="#pricing" className="inline-flex flex-col items-center text-gray-500 hover:text-gray-700 transition-colors group">
+                <span className="text-sm mb-2">Scroll to explore</span>
+                <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center group-hover:border-gray-500 transition-colors">
+                  <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-bounce group-hover:bg-gray-600 transition-colors"></div>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -105,10 +122,12 @@ const Hero = () => {
                   <div className="w-10 h-10 bg-white rounded-lg shadow-md flex items-center justify-center border border-gray-200 hover:shadow-lg transition-shadow p-2">
                     <Image 
                       src={icon} 
-                      alt={`${name} integration`} 
+                      alt={`${name} integration - Connect ${name} with AutoMate.One automation services`} 
                       width={24} 
                       height={24} 
                       className="w-6 h-6 object-contain"
+                      loading="lazy"
+                      sizes="(max-width: 768px) 24px, 24px"
                     />
                   </div>
                   <span className="text-xs text-gray-500 text-center">{name}</span>

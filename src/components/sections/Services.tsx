@@ -7,23 +7,30 @@ import { PlusIcon, ClockIcon } from "@heroicons/react/24/outline";
 
 const Services = () => {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-slate-50 via-white to-slate-50" id="services">
+    <section 
+      className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-slate-50 via-white to-slate-50" 
+      id="services"
+      aria-labelledby="services-heading"
+    >
       <Container>
-        <div className="text-center mb-16">
+        <header className="text-center mb-16">
           <p className="text-sm text-cyan-600 font-medium mb-4 animate-fade-in">
             Built for small agencies: reporting, lead gen, ops, and AI assist
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-slide-up text-gray-900">
+          <h2 
+            id="services-heading"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-slide-up text-gray-900"
+          >
             Automations for Agencies
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in mb-4" style={{animationDelay: '0.2s'}}>
             From daily client reports to prospect monitoring, automate the tasks that keep your team busy.
           </p>
           <div className="inline-flex items-center gap-2 bg-cyan-50 border border-cyan-200 text-cyan-700 text-sm font-medium px-4 py-2 rounded-full animate-fade-in" style={{animationDelay: '0.4s'}}>
-            <ClockIcon className="w-4 h-4" />
+            <ClockIcon className="w-4 h-4" aria-hidden="true" />
             Save 10-25 hours per week on average
           </div>
-        </div>
+        </header>
         
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8 mb-12">
           {services.map((service, index) => {

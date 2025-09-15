@@ -21,6 +21,7 @@ const Header = () => {
     <header 
       className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg transition-all duration-300"
       style={{ boxShadow: 'none', borderBottom: 'none' }}
+      role="banner"
     >
       <Container>
   <div className="flex items-center justify-between py-4">
@@ -29,7 +30,7 @@ const Header = () => {
             <div className="relative">
               <Image 
                 src="/logo.svg" 
-                alt="AutoMate.One Logo" 
+                alt="AutoMate.One - Agency Automation Services Logo" 
                 width={32} 
                 height={32} 
                 className="w-8 h-8 object-contain" 

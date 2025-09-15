@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Container } from "../ui/Container";
 import { Section } from "../ui/Section";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import Script from "next/script";
 
 const FAQ = () => {
   const [openItem, setOpenItem] = useState<number | null>(0);
@@ -35,12 +36,37 @@ const FAQ = () => {
     }
   ];
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
-    <Section className="py-20 md:py-28 bg-white">
+    <>
+      <Script
+        id="faq-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+      />
+    <Section 
+      className="py-20 md:py-28 bg-white"
+      aria-labelledby="faq-heading"
+    >
       <Container>
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 
+              id="faq-heading"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6"
+            >
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -98,6 +124,7 @@ const FAQ = () => {
         </div>
       </Container>
     </Section>
+    </>
   );
 };
 
